@@ -1,0 +1,36 @@
+*{box-sizing: border-box;}
+
+body{
+	color: darkblue;
+
+	margin:auto;
+}
+.content { max-width: 1400px;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: 50%;
+	margin:50px;
+	background-color: #64ACFF;
+   padding: 200px;
+
+}
+
+#question2, #question4, #button-namefriends{
+	display: none;
+}
+p{
+	  font:20px Comic Sans MS;
+	  padding: 10px;
+}
+
+#totalInput{
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+#friend1, #friend2, #friend3, #friend4, #friend5, #firstSpender, #secondSpender, #thirdSpender, #fourthSpender, #fifthSpender{
+	display:none;
+	  margin: 10px;
+}
+

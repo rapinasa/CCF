@@ -8,79 +8,80 @@
 		<link type="text/css" rel="stylesheet" href="CCF.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  
-    </head>
-<body>
-<div class="content">
-	<div class="sentences">
-		<p id="question1">How much money did you spend?</p>
-		<p id="question2">How many friends have to pay?</p>
-	</div>
-    <div class="info">
-    	<div id="question3">
-    		<div class="ui right labeled input">
-                <label for="money" class="ui label"><i class="dollar sign icon"></i></label>
-                <input type="number" id="money" name="money"  placeholder="Money">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="content">
+
+      	<div class="sentences">
+        		<p id="question1">How much money did you spend?</p>
+        		<p id="question2">  How many friends have to pay?</p>
+            <p id="question5"> Enter name of friends? </p>
+      	</div>
+        <div class="info">
+
+          	<div id="question3">
+        		    <div class="ui right labeled input">
+                    <label for="money" class="ui label"><i class="dollar sign icon"></i></label>
+                    <input type="number" id="money" name="money"  placeholder="Money">
+                </div>
+        		    <button class="ui button" id="button-money" onclick="saveMoney()">
+        		  	  <i class="plus icon"></i>
+        		    </button>
+          	</div>
+
+          	<div id="question4">
+            		<div class="ui right labeled input">
+                    <label for="friends" class="ui label"> <i class="users icon"></i></label>
+                    <input type="text" placeholder="Friends" id="friends" autofocus>
+                    <input type="text" placeholder="type friendsName" id="friendsName" autofocus>
+                </div>
+        		    <button class="ui button" id="button-friends" onclick="totalFriends()">
+        		  	  <i class="plus icon"></i>
+        		    </button>
+          	</div>
+        </div>
+        <div id="totalInput">
+
+            <div class="ui icon input"  id="friend1">
+              <input type="text" id="fr1"   placeholder="friend 1" >
+              <button class="ui button" id="friendsName1">Name</button>
             </div>
-    		    <button class="ui button" id="button-money" onclick="saveMoney()">
-    		  	  <i class="plus icon"></i>
-    		    </button>
-    	</div>
-    	<div id="question4">
-    		<div class="ui right labeled input">
-                <label for="friends" class="ui label"> <i class="users icon"></i></label>
-                <input type="text" placeholder="Friends" id="friends">
+
+            <div class="ui icon input" id="friend2">
+              <input type="text" id="fr2" placeholder="friend 2">
+              <button class="ui button" id="friendsName2">Name</button>
             </div>
-    		    <button class="ui button" id="button-friends" onclick="totalFriends()">
-    		  	  <i class="plus icon"></i>
-    		    </button>
-    	</div>
 
-    </div>
-   <div id="totalInput">
+            <div class="ui icon input" id="friend3">
+              <input type="text" id="fr3" placeholder="friend 3">
+              <button class="ui button" id="friendsName3">Name</button>
+            </div>
 
-           
+             <div class="ui icon input" id="friend4">
+              <input type="text" id="fr4" placeholder="friend 4">
+              <button class="ui button" id="friendsName4">Name</button>
+            </div>
 
-        <div class="ui icon input" id="friend1">
-          <input type="number" id="fr1" value="0" placeholder="friend 1" >
-        </div>
-        
-        <div class="ui icon input" id="friend2">
-          <input type="number" id="fr2" value="0" placeholder="friend 2" >
-        </div>
-
-        <div class="ui icon input" id="friend3">
-          <input type="number" id="fr3" value="0" placeholder="friend 3" >
+            <div class="ui icon input" id="friend5">
+              <input type="text" id="fr5" placeholder="friend 5">
+              <button class="ui button" id="friendsName5">Name</button>
+            </div>
+              <button class="ui button" id="button-namefriends" onclick="calculation()">
+                <i class="plus icon"></i>
+              </button>
         </div>
 
-         <div class="ui icon input" id="friend4">
-          <input type="number" id="fr4" value="0" placeholder="friend 2" >
-        </div>
-
-        <div class="ui icon input" id="friend5">
-          <input type="number" id="fr5" value="0" placeholder="friend 3" >
-        </div>
-        
-        
-        
-
-
-        <button class="ui button" id="button-namefriends" onclick="calculation()">
-                  <i class="plus icon"></i>
-                </button>
-
-
-    </div>
-<div><p id='total'></p></div>
-<div><p id='dividetSum'></p></div>
-      <div><p id='firstSpender'></p></div>
-      <div><p id='secondSpender'></p></div>
-      <div><p id='thirdSpender'></p></div>
-      <div><p id='fourthSpender'></p></div>
-      <div><p id='fifthSpender'></p></div>
+        <div><p id='total'></p></div>
+        <div><p id='dividetSum'></p></div>
+        <div><p id='firstSpender'></p></div>
+        <div><p id='secondSpender'></p></div>
+        <div><p id='thirdSpender'></p></div>
+        <div><p id='fourthSpender'></p></div>
+        <div><p id='fifthSpender'></p></div>
      </div>
-   <script type="text/javascript" src="CCF.js"></script>
-   <script type="text/javascript" src="jqueryCCF.js"></script>
- </body>
+
+     <script type="text/javascript" src="CCF.js"></script>
+     <script type="text/javascript" src="jqueryCCF.js"></script>
+  </body>
 </html>

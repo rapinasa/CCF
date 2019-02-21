@@ -15,8 +15,8 @@
 
       	<div class="sentences">
         		<p id="question1">How much money did you spend?</p>
-        		<p id="question2">  How many friends have to pay?</p>
-            <p id="question5"> Enter name of friends? </p>
+        		<p id="question2"> How many friends have to pay? Enter number friends, no more 5</p>
+            <p id="question5"> Enter name of friends and push button ADD NAME? </p>
       	</div>
         <div class="info">
 
@@ -33,45 +33,46 @@
           	<div id="question4">
             		<div class="ui right labeled input">
                     <label for="friends" class="ui label"> <i class="users icon"></i></label>
-                    <input type="text" placeholder="Friends" id="friends" autofocus>
-                    <input type="text" placeholder="type friendsName" id="friendsName" autofocus>
+                    <input type="text" placeholder="Friends" id="friends" autofocus >
+                    <input type="text" placeholder="type friends name" id="friendsName">
                 </div>
         		    <button class="ui button" id="button-friends" onclick="totalFriends()">
         		  	  <i class="plus icon"></i>
         		    </button>
           	</div>
+                <button class="ui button" id="button-namefriends" onclick="calculation()">
+                  Caclulate
+                </button>
         </div>
+        <p id="question6"> Enter amount of money each friends who complete a sum? </p>
         <div id="totalInput">
 
             <div class="ui icon input"  id="friend1">
               <input type="text" id="fr1"   placeholder="friend 1" >
-              <button class="ui button" id="friendsName1">Name</button>
+              <button class="ui button" id="friendsName1">Add Name</button>
             </div>
 
             <div class="ui icon input" id="friend2">
               <input type="text" id="fr2" placeholder="friend 2">
-              <button class="ui button" id="friendsName2">Name</button>
+              <button class="ui button" id="friendsName2">Add Name</button>
             </div>
 
             <div class="ui icon input" id="friend3">
               <input type="text" id="fr3" placeholder="friend 3">
-              <button class="ui button" id="friendsName3">Name</button>
+              <button class="ui button" id="friendsName3">Add Name</button>
             </div>
 
              <div class="ui icon input" id="friend4">
               <input type="text" id="fr4" placeholder="friend 4">
-              <button class="ui button" id="friendsName4">Name</button>
+              <button class="ui button" id="friendsName4">Add Name</button>
             </div>
 
             <div class="ui icon input" id="friend5">
               <input type="text" id="fr5" placeholder="friend 5">
-              <button class="ui button" id="friendsName5">Name</button>
+              <button class="ui button" id="friendsName5">Add Name</button>
             </div>
-              <button class="ui button" id="button-namefriends" onclick="calculation()">
-                <i class="plus icon"></i>
-              </button>
+             
         </div>
-
         <div><p id='total'></p></div>
         <div><p id='dividetSum'></p></div>
         <div><p id='firstSpender'></p></div>

@@ -15,7 +15,7 @@ body{
     padding: 200px;
 }
 
-#question2, #question4, #question5, #button-namefriends{
+#question2, #question4, #question5, #question6, #button-namefriends{
 	display: none;
 }
 
@@ -29,10 +29,13 @@ p  { font:20px Comic Sans MS;
 	flex-wrap: wrap;
 }
 
-#friend1, #friend2, #friend3, #friend4, #friend5, #firstSpender,
+#friend1, #friend2, #friend3, #friend4, #friend5,  #firstSpender,
  #secondSpender, #thirdSpender, #fourthSpender, #fifthSpender, #friendsName
 {
 	display:none;
 	margin: 10px;
 }
-
+.info{
+	display: flex;
+	justify-content: center;
+}

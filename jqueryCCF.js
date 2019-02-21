@@ -9,15 +9,15 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#button-friends").click(function(){
-     $("#question2, #button-friends, #friends").hide("high", function(){
-    $("#button-namefriends, #question5, #friendsName").show("high");
+     $("#question2, #button-friends, #friends, label").hide("high", function(){
+    $("#button-namefriends, #question5, #question6, #friendsName").show("high");
   });
 });
 });
 
 $(document).ready(function(){
   $("#button-namefriends").click(function(){
-    $("#button-namefriends,#friendsName,#question2,#question4,#question5,#friend1,#friend2,#friend3,#friend4,#friend5").hide("high");
+    $("#button-namefriends,#friendsName,#question2,#question4,#question5, #question6,#friend1,#friend2,#friend3,#friend4,#friend5").hide("high");
   });
 });
 
